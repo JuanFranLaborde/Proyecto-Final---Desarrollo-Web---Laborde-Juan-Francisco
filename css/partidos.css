@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-image: radial-gradient(#541388, #FFD400);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    height:1000px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+nav{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+nav li:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+nav li a:hover{
+    color: cornflowerblue;
+}
+
+nav .btn button{
+    margin-top: 10px;
+    margin-left: 2px;
+    font-weight: 700;
+    color: #541388;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+nav .btn button:hover{
+    background-color: #e2f1f8;
+    color:#FFD400;
+    transform: scale(1.1);
+}
+
+.banner-nba h1{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 30%;
+}
+
+/*EVENTOS DEL MAIN*/
+
+.eventos{
+    width: 50vw;
+    text-align: center;
+    margin: .5rem;
+}
+
+.eventos img{
+    width: 40vw;
+}
+
+/*GRILLA DE PRODUCTOS*/
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main .ver-mas{
+    margin-bottom:10px;
+    margin-left: 20px;
+    font-weight: 700;
+    list-style: none;
+    text-decoration: none;
+    color: #541388;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.ver-mas:hover{
+    background-color: #e2f1f8;
+    color: #FFD400;
+    transform: scale(1.1);
+}
