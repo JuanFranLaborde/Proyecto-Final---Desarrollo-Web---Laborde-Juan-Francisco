@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
 
 *{
     box-sizing: border-box;
@@ -6,72 +6,65 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
+    box-sizing: border-box;
 }
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+
+/*BODY*/
 
 body{
-    background-image: radial-gradient(#541388, #FFD400);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
-    height:1000px;
-}
-
-.header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
-}
-
-nav{
-    list-style: none;
-}
-
-nav li{
-    display: inline-block;
-    padding: 0 20px;    
-}
-
-nav li:hover{
-    transform: scale(1.1);
-}
-
-nav a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none;    
-}
-
-nav li a:hover{
-    color: cornflowerblue;
-}
-
-nav .btn button{
-    margin-top: 10px;
-    margin-left: 2px;
-    font-weight: 700;
-    color: #541388;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-nav .btn button:hover{
-    background-color: #e2f1f8;
-    color:#FFD400;
-    transform: scale(1.1);
-}
-
-.banner-nba h1{
-    text-align: center;
-    color: white;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    height:100%;
     position: relative;
-    top: 30%;
+    background-color: white;
+    background-position: center;
+}
+
+html {
+    height: 100%;
+}
+
+/*HEADER*/
+
+
+.navbar-nav .show>.nav-link {
+    color: red;
+}
+
+.nav-link:hover {
+    color: red;
+    transition: 0.6s ease;
+    transform: scale(1.2);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(132, 0, 255, 0.432);
+}
+
+.dropdown-item:hover {
+    color: red;
+    transition: 0.5s ease;
+}
+
+.navbar-brand{
+    cursor: pointer;
+    display: flex;
+}
+
+.navbar-brand img{
+    height: 70px;
+    width: auto;
+    transition: all 0.6s;
+}
+
+.navbar-brand img:hover{
+    transform: scale(1.2);
 }
 
 /*EVENTOS DEL MAIN*/
@@ -112,3 +105,12 @@ main .ver-mas{
     color: #FFD400;
     transform: scale(1.1);
 }
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+    }

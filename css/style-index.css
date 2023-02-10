@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
 
 *{
     box-sizing: border-box;
@@ -9,146 +9,118 @@
     box-sizing: border-box;
 }
 
+ol,
+ul {
+    padding-left: 0;
+}
+
+
 /*BODY*/
 
 body{
-    /* background-image: url(https://images8.alphacoders.com/108/1084924.png); */
-    background-size:auto;
-    background-repeat: no-repeat;
-    height:auto;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    height:100%;
     position: relative;
     background-color: white;
+    background-position: center;
+}
+
+html {
+    height: 100%;
 }
 
 /*HEADER*/
 
-.header{
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    justify-content:space-around ;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
-    
+
+.navbar-nav .show>.nav-link {
+    color: red;
 }
 
-.header .logo{
+.nav-link:hover {
+    color: red;
+    transition: 0.6s ease;
+    transform: scale(1.2);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(132, 0, 255, 0.432);
+}
+
+.dropdown-item:hover {
+    color: red;
+    transition: 0.5s ease;
+}
+
+.navbar-brand{
     cursor: pointer;
-    margin-right: auto;
     display: flex;
 }
 
-.header .logo img{
+.navbar-brand img{
     height: 70px;
     width: auto;
-    transition: all 0.3s;
+    transition: all 0.6s;
 }
 
-.header .logo img:hover{
+.navbar-brand img:hover{
     transform: scale(1.2);
-    border-color: #541388;
 }
 
-.header .nav-links{
+/*
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-left: 10%;
 }
 
-.header .nav-links li{
+.nav-links li{
     display: inline-block;
     padding: 0 10px;
     display: flex;
+    padding-left: 8%;
 }
-
-.header .nav-links li:hover{
+.nav-links li:hover{
     transform: scale(1.1);
 }
 
-.header .nav-links a{
+.nav-links a{
     font-size: 700;
     color: #eceff1;
     text-decoration: none; 
 }
-
-.header .nav-links li a:hover{
+.nav-links li a:hover{
     color: #c8102e;
-}
-
-.header .btn button{
-    margin-left: 20px;
-    font-weight: 700;
-    color: #1d428a;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    display: flex;
-}
-
-.header .btn button:hover{
-    background-color: #e2f1f8;
-    color:#c8102e;
-    transform: scale(1.1);
-}
-
+} */
 
 /*MAIN*/
 
-/* .banner-nba{
-    background-image: url(https://www.shutterstock.com/image-illustration/basketball-tournament-blank-poster-design-260nw-1578122359.jpg);
-    height: 50vh;
-    background-size: cover;
-} */
-
-/* .banner-nba h1{
-    text-align: center;
-    color: white;
+section {
+    display: flex;
+    width:auto;
+    height: 430px;
     position: relative;
-    top: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    justify-content:baseline;
 }
 
-/*EVENTOS DEL MAIN*/
-
-/* .eventos{
-    width: 50vw;
-    text-align: center;
-    margin: .5rem;
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
 }
 
-.eventos img{
-    width: 40vw;
-} */ 
-
-/*GRILLA DE PRODUCTOS*/
-/* .home-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+section img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
-
-main .ver-mas{
-    margin-bottom:10px;
-    margin-left: 20px;
-    font-weight: 700;
-    list-style: none;
-    text-decoration: none;
-    color: #541388;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.ver-mas:hover{
-    background-color: #e2f1f8;
-    color: #FFD400;
-    transform: scale(1.1);
-} */
 
 /*FOOTER*/
 
@@ -159,6 +131,7 @@ footer{
     left: 0;
     right: 0;
     background: white;
+    background-attachment: fixed;
     height: auto;
     width: 100%;
     font-family: "Open Sans";
@@ -191,6 +164,7 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    margin-right: 40px;
 }
 .socials li{
     margin: 0 10px;
@@ -225,58 +199,13 @@ footer{
     opacity: .4;
     font-weight: 200;
     margin-left: 10px;
+    color: red;
 }
 
-section {
-    display: flex;
-    width:auto;
-    height: 430px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    justify-content:baseline;
-}
-
-section img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-
-section img:hover{
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-
-.nav-boton{
-    background-color:#e2f1f8;
-    color: black;
-    padding: 10px 0;
-    border: 2px solid;
-    display: none;
-
-}
-
-@media (max-width: 600px) {
-    .nav-links a{
-        flex-direction: column;
-        color: black;
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
     }
-    .header{
-        background-color: white;
-        color:black;
     }
-    footer{
-        background-color: black;
-        color: #FFFF;
-    }
-    .socials a{
-        color: white;
-    }
-    
-}

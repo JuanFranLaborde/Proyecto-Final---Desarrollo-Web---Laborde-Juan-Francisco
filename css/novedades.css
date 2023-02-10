@@ -1,52 +1,167 @@
-body{
-    background-image: radial-gradient(#541388, #FFD400);
-    background-size:cover;
-    background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    height: 100%;
+    background-image: url("../resources/darkness.webp");
+    background-attachment: fixed;
     background-position: center;
-    background-attachment:fixed;
-    height:1000px;
-    position: relative;
+    background-repeat: repeat;
 }
 
-
-nav{
-    list-style: none;
+html {
+    height: 100%;
 }
 
-nav li{
-    display: inline-block;
-    padding: 0 20px;    
+/*HEADER*/
+
+
+.navbar-nav .show>.nav-link {
+    color: red;
 }
 
-nav li:hover{
-    transform: scale(1.1);
+.nav-link:hover {
+    color: red;
+    transition: 0.6s ease;
+    transform: scale(1.2);
 }
 
-nav a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none;    
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(132, 0, 255, 0.432);
 }
 
-nav li a:hover{
-    color: cornflowerblue;
+.dropdown-item:hover {
+    color: red;
+    transition: 0.5s ease;
 }
 
-nav .btn button{
-    margin-top: 10px;
-    margin-left: 2px;
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
+.navbar-brand{
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    display: flex;
 }
 
-nav .btn button:hover{
-    background-color: #e2f1f8;
-    color:#FFD400;
-    transform: scale(1.1);
+.navbar-brand img{
+    height: 70px;
+    width: auto;
+    transition: all 0.6s;
 }
+
+.navbar-brand img:hover{
+    transform: scale(1.2);
+}
+
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+    }
+
+    .hero {
+        width: 100%;
+        height: 87vh;
+        background-image: linear-gradient(#000000b4, #000000b4), url("../resources/tshirt-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero__text {
+        color: #fafafa;
+        font-size: 3em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        animation: fadeIn;
+        animation-duration: 3s;
+    }
+    
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "."
+            "."
+            "contact";
+        align-content: center;
+        justify-items: center;
+    }
+    
+    .gridcontainer__samples {
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #1d428a;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: transform .2s;
+        width: 98%;
+        height: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .gridcontainer__samples:hover {
+        transform: scale(1.02);
+    }
+    
+    .gridcontainer__samples a {
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+    
+    .gridcontainer__catalogue {
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #1d428a;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: transform .2s;
+        width: 98%;
+        height: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .gridcontainer__catalogue:hover {
+        transform: scale(1.02);
+    }
+    
+    .gridcontainer__catalogue a {
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+    
+    }
+    

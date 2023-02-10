@@ -10,6 +10,47 @@ body {
     padding: 0 1.5em;
 }
 
+/*HEADER*/
+
+.navbar-nav{
+    font-size: 20px;
+}
+
+.navbar-nav .show>.nav-link {
+    color: red;
+}
+
+.nav-link:hover {
+    color: red;
+    transition: 0.6s ease;
+    transform: scale(1.2);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(132, 0, 255, 0.432);
+}
+
+.dropdown-item:hover {
+    color: red;
+    transition: 0.5s ease;
+}
+
+.navbar-brand{
+    cursor: pointer;
+    display: flex;
+}
+
+.navbar-brand img{
+    height: 70px;
+    width: auto;
+    transition: all 0.6s;
+}
+
+.navbar-brand img:hover{
+    transform: scale(1.2);
+}
+
+
 .container {
     max-width: 1170px;
     margin-left: auto;
@@ -25,6 +66,7 @@ ul {
 .logo {
     text-align: center;
     font-size: 3em;
+    padding-top: 8%;
 }
 
 .logo span {
@@ -40,12 +82,15 @@ ul {
 }
 
 .contact-form {
-    background: #9448BC;
+    background: #1d428a;
+    color: #fff;
+    margin-bottom: 5%;
 }
 
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: #fff;
 }
 
 .contact-form form label {
@@ -74,7 +119,7 @@ ul {
 }
 
 .contact-form form button {
-    background: #541388;
+    background: #3A537D;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -82,7 +127,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #541388;
+    background: #1d428a;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
@@ -90,7 +135,9 @@ ul {
 
 /* CONTACT INFO */
 .contact-info {
-    background: #541388;
+    background: #3A537D;
+    color: #fff;
+    margin-bottom: 10%;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
@@ -117,44 +164,11 @@ ul {
     }
 }
 
-nav{
-    list-style: none;
-}
 
-nav li{
-    display: inline-block;
-    padding: 0 20px;    
-}
-
-nav li:hover{
-    transform: scale(1.1);
-}
-
-nav a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none;    
-}
-
-nav li a:hover{
-    color: #c8102e;
-}
-
-nav .btn button{
-    margin-top: 10px;
-    margin-left: 2px;
-    font-weight: 700;
-    color: #1d428a;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-nav .btn button:hover{
-    background-color: #e2f1f8;
-    color:#c8102e;
-    transform: scale(1.1);
-}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+    }
