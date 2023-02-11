@@ -9,30 +9,32 @@
     box-sizing: border-box;
 }
 
+/*BODY*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    height: 100%;
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+html {
+    height: 100%;
+}
+
 ol,
 ul {
     padding-left: 0;
 }
 
 
-/*BODY*/
-
-body{
-    background-attachment: fixed;
-    background-repeat: repeat;
-    height:100%;
-    position: relative;
-    background-color: white;
-    background-position: center;
-}
-
-html {
-    height: 100%;
-}
-
 /*HEADER*/
 
-
+.navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     color: red;
 }
@@ -66,6 +68,7 @@ html {
 .navbar-brand img:hover{
     transform: scale(1.2);
 }
+
 
 /*
 .nav-links {
@@ -105,7 +108,10 @@ section {
     left: 0;
     right: 0;
     height: auto;
-    justify-content:baseline;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 section img {
