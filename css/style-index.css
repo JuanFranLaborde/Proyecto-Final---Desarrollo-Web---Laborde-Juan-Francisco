@@ -70,33 +70,6 @@ ul {
 }
 
 
-/*
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-left: 10%;
-}
-
-.nav-links li{
-    display: inline-block;
-    padding: 0 10px;
-    display: flex;
-    padding-left: 8%;
-}
-.nav-links li:hover{
-    transform: scale(1.1);
-}
-
-.nav-links a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none; 
-}
-.nav-links li a:hover{
-    color: #c8102e;
-} */
-
 /*MAIN*/
 
 section {
